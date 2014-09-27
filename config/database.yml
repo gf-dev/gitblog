@@ -20,6 +20,7 @@ development:
   pool: 5
   username: testdbuser
   password: chispas
+  host: localhost
 
 test:
   adapter: postgresql
@@ -28,6 +29,7 @@ test:
   pool: 5
   username: testdbuser
   password: chispas
+  host: localhost
 
 production:
   adapter: postgresql
@@ -36,6 +38,7 @@ production:
   pool: 5
   username: testdbuser
   password: chispas
+  host: localhost
 
 
 # Warning: The database defined as "test" will be erased and
