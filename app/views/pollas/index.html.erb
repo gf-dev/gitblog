@@ -1,0 +1,15 @@
+<h1>Lista de Pollas</h1>
+ <%= link_to 'Nueva Polla', new_polla_path %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @pollas.each do |polla| %>
+    <tr>
+      <td><%= link_to polla.title, polla_path(polla.id) %></td>
+      <td><%= polla.text %></td>
+    </tr>
+  <% end %>
+</table>
